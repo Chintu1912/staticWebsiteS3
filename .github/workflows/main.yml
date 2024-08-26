@@ -20,4 +20,4 @@
          aws-secret-access-key: ${{ secrets.SECRET_KEY }}
 
      - name: copying the code to S3 bucket
-       run: aws s3 sync . s3://BUCKET_NAME --delete
+       run: aws s3 sync . s3://static-file-hosting-github-actions --delete
